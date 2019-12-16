@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 .navbar {
     min-height: 100px;
 }
@@ -26,6 +30,8 @@ h3 {
 
 footer {
     background-color: teal;
+    flex-shrink: 0
+    ;
 }
 .pagecontainer {
     padding: 60px;
@@ -36,7 +42,13 @@ footer {
 body {
     background-color:whitesmoke
     ;
+    display: flex;
+    flex-direction: column;
 }
+
+/* .content {
+    flex: 1 0 auto;
+} */
 
 .pic_size {
     min-width: 50px;
@@ -55,7 +67,7 @@ body {
     padding: 5px;
 }
 
-@media only screen and (max-width: 406px) {
+@media only screen and (max-width: 768px) {
     .visuals {
       flex-flow: row nowrap;
     }
